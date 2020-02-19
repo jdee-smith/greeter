@@ -1,0 +1,4 @@
+out/*
+python/__pycache__/*
+python/.*
+python/greeter.cpython*

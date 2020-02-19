@@ -1,0 +1,38 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "Build Test Runner",
+        "type": "shell",
+        "command": "clang++",
+        "args": [
+          "-std=c++17",
+          "-stdlib=libc++",
+          "-Igreeter",
+          "greeter/greeter.cpp",
+          "test/test_greeter.cpp",
+          "-o",
+          "out/test_greeter.out",
+          "--debug"
+        ],
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        }
+      },
+      {
+        "label": "Build Python Module",
+        "type": "shell",
+        "command": "python",
+        "args": [
+          "-m",
+          "unittest",
+          "python/test_greeter.py"
+        ],
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        }
+      }
+    ]
+  }
