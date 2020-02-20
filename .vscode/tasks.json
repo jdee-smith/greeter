@@ -21,7 +21,7 @@
         }
       },
       {
-        "label": "Build Python Module",
+        "label": "Build and Test Python Module",
         "type": "shell",
         "command": "python",
         "args": [
