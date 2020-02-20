@@ -1,5 +1,6 @@
 #include "greeter.hpp"
 #include <iostream>
+#include <string>
 
 namespace greeter
 {

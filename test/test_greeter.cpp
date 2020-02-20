@@ -5,6 +5,7 @@
 #include "boost/test/tools/output_test_stream.hpp"
 #include <iostream>
 #include <string>
+#include <vector>
 
 BOOST_AUTO_TEST_SUITE ( GreeterTestSuite )
 
@@ -34,5 +35,6 @@ BOOST_AUTO_TEST_CASE ( test_sayHello )
 
     BOOST_CHECK ( output.is_equal ( "Hello Jason!\n" ) );
 }
+
 
 BOOST_AUTO_TEST_SUITE_END( )

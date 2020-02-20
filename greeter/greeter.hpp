@@ -2,6 +2,7 @@
 #define GREETER_H
 
 #include <string>
+#include <vector>
 
 namespace greeter
 {
@@ -15,7 +16,10 @@ namespace greeter
         std::string getName();
         void setName( std::string name );
         void sayHello();
+        template <typename T> std::vector<T> square( const std::vector<T> &v );
     };
 }
+
+#include "greeter.tpp"
 
 #endif

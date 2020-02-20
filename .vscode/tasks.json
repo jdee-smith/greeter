@@ -4,11 +4,12 @@
       {
         "label": "Build Test Runner",
         "type": "shell",
-        "command": "clang++",
+        "command": "g++",
         "args": [
           "-std=c++17",
           "-stdlib=libc++",
           "-Igreeter",
+          "-O3",
           "greeter/greeter.cpp",
           "test/test_greeter.cpp",
           "-o",
